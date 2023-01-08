@@ -129,7 +129,7 @@ jobs:
     - name: 下载"${{matrix.target}}"源码
       working-directory: /workdir
       run: |
-        git clone -b 20221001 --single-branch "$REPO_URL" openwrt > /dev/null 2>&1
+        git clone -b 20221001 "$REPO_URL" openwrt > /dev/null 2>&1
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         cd $GITHUB_WORKSPACE/openwrt
         ./scripts/feeds update -a > /dev/null 2>&1
