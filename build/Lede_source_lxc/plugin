@@ -17,3 +17,7 @@ luci-app-zerotier
 luci-theme-argon
 luci-theme-bootstrap
 luci-theme-material
+luci-app-nps
+luci-app-frpc
+luci-proto-ipv6
+luci-app-aliddns
